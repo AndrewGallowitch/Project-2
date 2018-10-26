@@ -1,0 +1,47 @@
+The data was extracted from the ski resort website www.skiresort.info. the data describes multiple features of over 5000 ski resorts across the world.
+
+There is location information, basic ski resort statistics and ratings foe 18 features describing the accessibility, snow condition amongst other features. Each feature is described below:
+
+Resort Name: The name of the resort.
+Continent: The Continent the resort is located in.
+Country: The country the resort is located in.
+State/Province: Further refinement of the resort location to state or province level.
+URL: The URL that the majority of the data was extracted from.
+Altitude: The elevation in metres above sea level.
+Easy: The cumulative distance of beginner slopes in km.
+Intermediate: The cumulative distance of intermediate slopes in km.
+Difficult: The cumulative distance of difficult slopes in km.
+Funicular: Typically a cable car tram capable of carrying 100's of passengers from the base to the top of the mountain.
+Circulating ropeway/gondola lifts: The number of gondola lifts available.
+Chairlift: The number of chair lifts available.
+T-bar lift/platter/button lift: The number of T-bar lifts available.
+Sunkid Moving Carpet: The number of Sunkid moving carpets available.
+Adult: The estimated price of an adult (age > 16 ) ski pass in local currency.
+Youth: The estimated price of an youth ski (6 > age > 16) pass in local currency.
+Child: The estimated price of an child (age < 6) ski pass in local currency.
+Currency: The definition of the local currency
+Ski resort size: A rating (out of 5 stars) for the size of the resort.
+Slope offering, variety of runs: A rating (out of 5 stars) for the slope offering of the resort.
+Lifts and cable cars: A rating (out of 5 stars) for the number, quality and capacity of the lifts at the resort.
+Snow reliability: A rating (out of 5 stars) for the reliability and quality of the snow.
+Slope preparation: A rating (out of 5 stars) for the quality of the slope preperation.
+Access, on-site parking: A rating (out of 5 stars) for the parking accessibility of the resort.
+Orientation (trail map, information boards, sign-postings): A rating (out of 5 stars) for the presentation of the trail map as well as available information boards and sign postings on the slopes.
+Cleanliness and hygiene: A rating (out of 5 stars) for the apparent cleanliness of public spaces and access to public toilets.
+Environmentally friendly ski operation: A rating (out of 5 stars) for the environmentally freindliness of the resort.
+Friendliness of staff: A rating (out of 5 stars) for the friendliness of the staff.
+Mountain restaurants/ski huts/gastronomy: A rating (out of 5 stars) for the availablity and quality of the restaurants on the slopes.
+Après-ski: A rating (out of 5 stars) for the availability of bars and facilities off the mountain.
+Accommodation offering directly at the slopes and lifts: A rating (out of 5 stars) for the availability and selection of accomodation on and off the slopes.
+Families and children: A rating (out of 5 stars) for the family friendliness of the resort.
+Beginners: A rating (out of 5 stars) for the number and length of the beginner slopes.
+Advanced skiers/freeriders: A rating (out of 5 stars) for the number and length of the advanced slopes.
+Snow parks: A rating (out of 5 stars) for the quality and selection of the snow parks on the slopes.
+Cross-country skiing and trails: A rating (out of 5 stars) for the availability and length of cross country skiing trails.
+Aerial tramway/reversible ropeway: The number of aerial tramway lifts available.
+Rope tow/beginner lift: The number of rope tow lifts available.
+People mover: The number of people mover conveyor belt lifts available.
+Combined installation (gondola and chair): The number of combined char lift and gondola lifts available.
+Cog railway: The number of cog railway lifts available.
+Helicopter for Heli-skiing: The number of heli skiiing options available.
+Snow caterpillars for Cat-skiing: The number of caterpiller skiing options available.
