@@ -5,7 +5,7 @@
     "database": "resorts_db",
     "host": "localhost",
     "dialect": "mysql",
-    "port": "3036"
+    "port": "3306"
   },
   "test": {
     "username": "root",

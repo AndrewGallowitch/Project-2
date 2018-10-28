@@ -1,48 +1,38 @@
 module.exports = function(sequelize, DataTypes) {
   var Resort = sequelize.define("Resort", {
-    resortName: DataTypes.STRING,
-    continent: DataTypes.STRING,
-    country: DataTypes.STRING,
-    state: DataTypes.STRING,
-    url: DataTypes.STRING,
-    altitude: DataTypes.INTEGER,
-    easy: DataTypes.INTEGER,
-    intermediate: DataTypes.INTEGER,
-    difficult: DataTypes.INTEGER,
-    funicular: DataTypes.INTEGER,
-    crGl: DataTypes.INTEGER,
-    chairlift: DataTypes.INTEGER,
-    tBarLift: DataTypes.INTEGER,
-    sunkid: DataTypes.INTEGER,
-    adultPr: DataTypes.INTEGER,
-    youthPr: DataTypes.INTEGER,
-    childPr: DataTypes.INTEGER,
-    currency: DataTypes.STRING,
-    resortSize: DataTypes.DECIMAL,
-    varietyOfRuns: DataTypes.DECIMAL,
-    liftsAndCableCars: DataTypes.DECIMAL,
-    snowReliability: DataTypes.INTEGER,
-    slopePrep: DataTypes.INTEGER,
-    parking: DataTypes.INTEGER,
-    orientation: DataTypes.INTEGER,
-    cleanliness: DataTypes.INTEGER,
-    environmentallyFriendly: DataTypes.INTEGER,
-    friendlyStaff: DataTypes.INTEGER,
-    restaurants: DataTypes.INTEGER,
-    apresSki: DataTypes.INTEGER,
-    accommodation: DataTypes.INTEGER,
-    families: DataTypes.INTEGER,
-    beginners: DataTypes.INTEGER,
-    advanced: DataTypes.INTEGER,
-    snowParks: DataTypes.INTEGER,
-    crossCountry: DataTypes.INTEGER,
-    aerialTramway: DataTypes.INTEGER,
-    RopeTow: DataTypes.INTEGER,
-    peopleMover: DataTypes.INTEGER,
-    combinedInst: DataTypes.INTEGER,
-    cogRailway: DataTypes.INTEGER,
-    heliSkiing: DataTypes.INTEGER,
-    snowCat: DataTypes.INTEGER
+    ResortName: DataTypes.STRING,
+    Continent: DataTypes.STRING,
+    Country: DataTypes.STRING,
+    State: DataTypes.STRING,
+    Url: DataTypes.STRING,
+    Altitude: DataTypes.INTEGER,
+    Easy: {
+      type: DataTypes.DECIMAL(5, 2)
+    },
+    Intermediate: {
+      type: DataTypes.DECIMAL(5, 2)
+    },
+    Difficult: {
+      type: DataTypes.DECIMAL(5, 2)
+    },
+    AdultPrice: {
+      type: DataTypes.DECIMAL(7, 2)
+    },
+    YouthPrice: {
+      type: DataTypes.DECIMAL(7, 2)
+    },
+    ChildPrice: {
+      type: DataTypes.DECIMAL(7, 2)
+    },
+    ResortSize: {
+      type: DataTypes.DECIMAL(7, 2)
+    },
+    VarietyOfRuns: {
+      type: DataTypes.DECIMAL(7, 2)
+    },
+    LiftsAndCableCars: {
+      type: DataTypes.DECIMAL(7, 2)
+    }
   });
   return Resort;
 };
