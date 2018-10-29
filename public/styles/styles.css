@@ -29,15 +29,13 @@
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
 }
 
-/* INDEX PAGE */
-/* .jumbotron {
-  background-image: url("../images/skiHuts.jpg");
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-position: fixed;
-  background-position-y: center;
-  background-position-x: center;
-  border-bottom: rgb(247, 187, 57);
-} */
+.carousel-control{
+  height: 26%;
+top: 60%;
+width: 86px;
+}
+
+.navBar{
+  background: rgba(0, 0, 0, 0.750);
+  padding: 20px;
+}
