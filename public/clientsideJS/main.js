@@ -24,5 +24,3 @@ $("#modalSearch").click(function() {
     console.log(response);
   });
 });
-
-}
