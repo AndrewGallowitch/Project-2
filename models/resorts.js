@@ -1,3 +1,4 @@
+
 module.exports = function (sequelize, DataTypes) {
   var Resort = sequelize.define("Resort", {
     ResortName: DataTypes.STRING,
@@ -38,6 +39,7 @@ module.exports = function (sequelize, DataTypes) {
   {
     timestamps: false
   });
+
 
   return Resort;
 };
