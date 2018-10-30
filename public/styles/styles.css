@@ -9,14 +9,14 @@
   top: 0;
   bottom: 0;
   min-width: 20%;
-  min-height: 20%; 
+  min-height: 20%;
   z-index: -1;
   overflow: hidden;
 }
 
 .content {
   align-content: center;
-  background: rgba(0, 0, 0, 0.750);
+  background: rgba(0, 0, 0, 0.75);
   color: #f1f1f1;
   width: 100%;
   padding: 20px;
@@ -29,13 +29,42 @@
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
 }
 
-.carousel-control{
+.carousel-control {
   height: 26%;
-top: 60%;
-width: 86px;
+  top: 60%;
+  width: 86px;
+}
+/* NAVBAR STYLES */
+.navBar {
+  background: rgba(0, 0, 0, 0.75);
+  padding: 20px;
+}
+.searchButton {
+  margin-left: 13%;
+}
+#logout {
+  margin-left: -234%;
 }
 
-.navBar{
-  background: rgba(0, 0, 0, 0.750);
-  padding: 20px;
+/* MODAL CONTENT STYLES */
+.modal-content {
+  background: rgba(0, 0, 0, 0.88);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.stateSearch {
+  width: 100%;
+  color: white;
+  border-radius: 7px;
+  padding-top: 10px;
+  border: .1px solid white;
+  margin-bottom: 1%;
+  padding-left: 1%;
+}
+.slopeFinderHeader{
+  color: #dc3545;
+}
+
+.stateField{
+  width: 100%;
 }
