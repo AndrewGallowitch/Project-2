@@ -1,3 +1,4 @@
+
 $("#searchButton").click(function() {
   event.preventDefault();
 });
@@ -23,3 +24,5 @@ $("#modalSearch").click(function() {
     console.log(response);
   });
 });
+
+}
