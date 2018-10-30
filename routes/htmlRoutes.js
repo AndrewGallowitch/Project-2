@@ -10,12 +10,16 @@ module.exports = function(app) {
     res.sendFile(path.join(__dirname, "../public/html/main.html"));
   });
 
-  app.get("/comments", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/html/comments.html"));
-  });
+  // app.get("/comments", function(req, res) {
+  //   res.sendFile(path.join(__dirname, "../public/html/comments.html"));
+  // });
 
-  // Render 404 page for any unmatched routes
-  app.get("*", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/html/404.html"));
+  // // Render 404 page for any unmatched routes
+  // app.get("*", function(req, res) {
+  //   res.sendFile(path.join(__dirname, "../public/html/404.html"));
+  // });
+
+  app.get("/search", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/html/main.html"));
   });
 };
