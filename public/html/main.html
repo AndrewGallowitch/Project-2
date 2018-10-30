@@ -134,14 +134,16 @@
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalCenterTitle">Slope Finder</h5>
+                    <i class="fas fa-mountain slopeFinderHeader"></i>
+                    <h3 class="modal-title slopeFinderHeader" id="exampleModalCenterTitle">Slope Search</h3>
+                    <i class="fas fa-mountain slopeFinderHeader"></i>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
-                    <label for="exampleFormControlSelect1">Search by State</label>
-                    <select>
+                    <div class="stateSearch bg-danger"><label for="exampleFormControlSelect1">Search by State</label></div>
+                    <select class="stateField">
                         <option value="AL">Alabama</option>
                         <option value="AK">Alaska</option>
                         <option value="AZ">Arizona</option>
@@ -195,7 +197,8 @@
                         <option value="WY">Wyoming</option>
                     </select>
                     <br>
-                    <label for="exampleFormControlSelect1">Search by price</label>
+                    <br>
+                    <div class="stateSearch bg-danger"><label for="exampleFormControlSelect1">Search by price</label></div>
                     <select class="form-control" id="searchPrice">
                         <option value="1"> $49 & less</option>
                         <option value="2"> $50 - $74</option>
@@ -204,7 +207,7 @@
                         <option value="5"> $150 & More</option>
                     </select>
                     <br>
-                    <label for="exampleFormControlSelect2">Search by slope variety</label>
+                    <div class="stateSearch bg-danger"><label for="exampleFormControlSelect2">Search by slope variety</label></div>
                     <select class="form-control" id="searchSlope">
                         <option value="1">1 (Beginner)</option>
                         <option value="2">2 (Novice)</option>
@@ -214,7 +217,7 @@
                     </select>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-danger">Search</button>
+                    <button type="button" class="btn btn-outline-danger">Search</button>
                 </div>
             </div>
         </div>
