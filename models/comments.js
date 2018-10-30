@@ -9,14 +9,14 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.STRING,
       allowNull: true
     },
-       review: {
-            type: DataTypes.STRING,
-            allowNull: false
-        },
-        resort_name: {
+    review: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
+    resort_name: {
       type: DataTypes.STRING,
       allowNull: false
     }
   });
   return User;
-};;
+};
