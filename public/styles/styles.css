@@ -39,3 +39,10 @@ width: 86px;
   background: rgba(0, 0, 0, 0.750);
   padding: 20px;
 }
+
+.searchButton {
+  margin-left: 13%;
+}
+#logout{
+margin-left: -234%;
+}
