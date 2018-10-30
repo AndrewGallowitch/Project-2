@@ -1,4 +1,3 @@
-
 $("#searchButton").click(function() {
   event.preventDefault();
 });
