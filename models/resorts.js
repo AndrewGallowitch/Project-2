@@ -1,4 +1,4 @@
-module.exports = function(sequelize, DataTypes) {
+module.exports = function (sequelize, DataTypes) {
   var Resort = sequelize.define("Resort", {
     ResortName: DataTypes.STRING,
     Continent: DataTypes.STRING,
@@ -28,11 +28,16 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.DECIMAL(7, 2)
     },
     VarietyOfRuns: {
-      type: DataTypes.DECIMAL(7, 2)
+      type: DataTypes.DECIMAL(7, 2),
+      defaultValue: 0.0
     },
     LiftsAndCableCars: {
       type: DataTypes.DECIMAL(7, 2)
     }
+  },
+  {
+    timestamps: false
   });
+
   return Resort;
 };
