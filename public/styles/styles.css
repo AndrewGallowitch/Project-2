@@ -68,3 +68,17 @@
 .stateField{
   width: 100%;
 }
+
+#idTable{
+  width: 10%;
+}
+#tableName{
+  width: 60%;
+}
+
+#tableState{
+  width:25%;
+}
+#tablePrice{
+  width: 15%;
+}

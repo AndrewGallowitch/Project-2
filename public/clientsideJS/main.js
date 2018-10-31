@@ -19,7 +19,7 @@ $("#modalSearch").click(function () {
     $(".resultDump").empty();
     var table = $("<table>");
     var tableBody = $("<tbody>");
-    var tableHead = $("<thead><th scope='col'>Id</th><th scope='col'>Resort Name</th><th scope='col'>State</th><th scope='col'>Price</th></thead>")
+    var tableHead = $("<thead><th id='idTable' scope='col'>Id</th><th id='tableName' scope='col'>Resort Name</th><th id='tableState' scope='col'>State</th><th id='tablePrice' scope='col'>Price</th></thead>")
     for(var i = 0; i < response.length; i++) {
     var tableRow = $("<tr><th class='clickMe'>" + response[i].id + "</th><td>" + response[i].ResortName + "</td><td>" + response[i].State + "</td><td>" + response[i].AdultPrice + "</td></tr>");
     tableBody.append(tableRow);
