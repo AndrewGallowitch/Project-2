@@ -20,22 +20,22 @@ $("#modalSearch").click(function () {
     var table = $("<table>");
     var tableBody = $("<tbody>");
     var tableHead = $("<thead><th scope='col'>Id</th><th scope='col'>Resort Name</th><th scope='col'>State</th><th scope='col'>Price</th></thead>")
+    
     for(var i = 0; i < response.length; i++) {
-    var tableRow = $("<tr><th class='clickMe'>" + response[i].id + "</th><td>" + response[i].ResortName + "</td><td>" + response[i].State + "</td><td>" + response[i].AdultPrice + "</td></tr>");
+      words = response[i].ResortName.toLowerCase().split("-");
+      for (var j = 0; j < words.length; j++) {
+        var letters = words[j].split("");
+        letters[0] = letters[0].toUpperCase();
+        words[j] = letters.join("");
+      }
+      var formatWord = words.join(" ");
+     
+      var tableRow = $("<tr><th class='clickMe'>" + response[i].id + "</th><td>" + formatWord + "</td><td>" + response[i].State + "</td><td>" + response[i].AdultPrice + "</td></tr>");
     tableBody.append(tableRow);
     }
     table.prepend(tableHead);
     table.append(tableBody);
     $(".resultDump").append(table);
 
-    function titleCase(resort) {
-      words = resort.toLowerCase().split("-");
-      for (var i = 0; i < words.length; i++) {
-        var letters = words[i].split("");
-        letters[0] = letters[0].toUpperCase();
-        words[i] = letters.join("");
-      }
-      return words.join(" ");
-    }
   });
 });
