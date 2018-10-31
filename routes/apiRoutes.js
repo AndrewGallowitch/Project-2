@@ -2,25 +2,25 @@ var db = require("../models");
 
 module.exports = function (app) {
 
-  app.get("/api/search/:state/:name", function(req, res) {
-    var userSearch = {
-      state: req.params.state,
-      name: req.params.name
-    };
+  app.get("/api/search", function (req, res) {
 
-    console.log("body ");
-    console.log(userSearch);
+    var state = req.query.state;
+    var name = req.query.name
 
+    whereConditions = [];
+    if (state) {
+      whereConditions.push({ State: state });
+    }
+    if (name) {
+      whereConditions.push({ ResortName: name });
+    }
     db.Resort.findAll({
       where: {
-        $or: [
-          { State: userSearch.state },
-          { ResortName: userSearch.name }
-        ]
+        $and: whereConditions
       },
       order: [["AdultPrice", 'DESC']]
     }).then(function (results) {
       res.json(results);
     });
-  });
+});
 };
