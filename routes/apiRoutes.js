@@ -8,7 +8,7 @@ module.exports = function (app) {
 
     var whereConditions = [];
     if (state) whereConditions.push({ State: state });
-    if (name) whereConditions.push({ ResortName: name });
+    if (name) whereConditions.push({ ResortName: {$like:"%"+name+"%"}});
 
     db.Resort.findAll({
       where: {
