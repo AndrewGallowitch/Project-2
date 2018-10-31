@@ -5,7 +5,7 @@ $("#searchButton").click(function () {
 $("#modalSearch").click(function () {
   event.preventDefault();
   var dash = $("#searchName").val().trim();
-  dash = dash.split(" ").join("-")toLowerCase();
+  dash = dash.split(" ").join("-").toLowerCase();
   
   $.ajax({
     url: "/api/search",
