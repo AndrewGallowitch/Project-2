@@ -5,7 +5,6 @@ module.exports = function (app) {
   app.get("/api/search/:state/:name", function(req, res) {
     var userSearch = {
       state: req.params.state,
-      // price: req.params.price,
       name: req.params.name
     };
 
