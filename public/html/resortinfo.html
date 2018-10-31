@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Information</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+        crossorigin="anonymous">
+    <title>Main Page</title>
+    <script src="https://www.gstatic.com/firebasejs/5.5.6/firebase.js"></script>
+</head>
+
+<body>
+    <video autoplay muted loop id="myVideo">
+        <source src="../images/Snow_4___30s___4k_res.mp4" type="video/mp4">
+    </video>
+
+    <nav class="navbar navbar-light navBar">
+        <div class="container">
+            <button class="btn btn-danger my-sm-0 searchButton mr-auto" data-toggle="modal" data-target="#myModal" id="searchButton"><i
+                    class="fas fa-mountain"></i> Search</button>
+            <form class="form-inline">
+                <button class="btn btn-danger ml-auto" id="logout" onclick="mainApp.logOut()" style="height: 100%;"><i
+                        class="fas fa-mountain"></i> LogOut</button>
+            </form>
+        </div>
+    </nav>
+
+    <br>
+    <br>
+
+    <div class="content container">
+        <div class="row">
+            <div class="headContainer container m-5">
+                <h1 class="display-4 text-danger"><i class="fas fa-mountain"></i><strong> ResortMe</strong></h1>
+                <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+                <hr class="bg-light">
+            </div>
+        </div>
+
+        <div id="resortInfo">
+            <div class="row">
+                <div class="col-6">
+                    <h2 id="resortName">Name Here</h2>
+                    <h5 id="state">State Here</h5>
+                </div>
+                <div id="altDistance" class="col-6">
+                    <h5>Altitude and Distance of Slopes (km)</h5>
+                    <hr class="bg-light">
+                    <p id="altitude">Altitude: </p>
+                    <p id="Easy">Easy Slope: </p>
+                    <p id="Intermediate">Intermediate Slope: </p>
+                    <p id="Difficult">Difficult Slope: </p>
+                </div>
+            </div>
+            <br> <br>
+            <div class="row">
+                <div id="pricing" class="col-6">
+                    <h5>Pricing</h5>
+                    <hr class="bg-light">
+                    <p id="adultPrice">Adult Price: </p>
+                    <p id="youthPrice">Youth Price: </p>
+                    <p id="childPrice">Child Price: </p>
+
+                </div>
+                <div id="quality" class="col-6">
+                    <h5>Slope Quality (scale of 1-5)</h5>
+                    <hr class="bg-light">git
+
+                    <p id="variety">Slope Variety: </p>
+                    <p id="lifts">Cable Cars and Lifts Quality: </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12" id="url">
+                <!-- insert url dynamically here -->
+            </div>
+        </div>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
