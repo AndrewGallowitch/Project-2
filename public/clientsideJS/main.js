@@ -47,7 +47,7 @@ $("#modalSearch").click(function() {
           formatWord +
           "</td><td>" +
           response[i].State +
-          "</td><td>" +
+          "</td><td>$" +
           response[i].AdultPrice +
           "</td></tr>"
       );
