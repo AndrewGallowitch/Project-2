@@ -18,7 +18,7 @@ This main page displays some of the most popular ski resorts in the country and 
 
 ![ffSS](public/images/resortMeMain.png)
 
-When the user clicks the search button, this modal will display and here they can search by state or by resort name. The user will input the desired parameters and then click the search button in the bottom of the modal. 
+When the user clicks the search button, a modal will appear, in which they can search by state or by resort name. The user will input the desired parameters and then click the search button in the bottom of the modal. 
 
 ![ffSS](public/images/resortMeModal.png)
 
