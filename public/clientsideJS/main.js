@@ -28,7 +28,7 @@ $("#modalSearch").click(function() {
     var tableBody = $("<tbody>");
 
     var tableHead = $(
-      "<thead><th id='idTable' scope='col'>Id</th><th id='tableName' scope='col'>Resort Name</th><th id='tableState' scope='col'>State</th><th id='tablePrice' scope='col'>Price</th></thead>"
+      "<thead><th id='idTable' scope='col'>Id</th><th id='tableName' scope='col'>Resort Name</th><th id='tableState' scope='col'>State</th><th id='tablePrice' scope='col'>Price</th><th id='tableSlope' scope='col'>Slope Quality</th></thead>"
     );
 
     for (var i = 0; i < response.length; i++) {
@@ -49,6 +49,8 @@ $("#modalSearch").click(function() {
           response[i].State +
           "</td><td>$" +
           response[i].AdultPrice +
+          "</td><td>" +
+          response[i].VarietyOfRuns +
           "</td></tr>"
       );
       tableBody.append(tableRow);

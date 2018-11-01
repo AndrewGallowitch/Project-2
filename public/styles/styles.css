@@ -68,12 +68,15 @@
   width: 10%;
 }
 #tableName{
-  width: 60%;
+  width: 50%;
 }
 
 #tableState{
-  width:25%;
+  width: 20%;
 }
 #tablePrice{
-  width: 15%;
+  width: 10%;
+}
+#tableSlope{
+  width: 10%;
 }
